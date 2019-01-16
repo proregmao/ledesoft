@@ -66,15 +66,15 @@
             "version": "0.5"
         }, 
         {
-            "build_date": "2019-01-16_11:47:40", 
-            "changelog": "和其它类似插件更好兼容", 
+            "build_date": "2019-01-16_12:44:19", 
+            "changelog": "修复定时任务", 
             "description": "外服游戏解决方案", 
             "home_url": "Module_sgame.asp", 
-            "md5": "f70a619d953a43b54687840ec32e8f70", 
+            "md5": "7818191980c08262f2c9dd92e1c094b6", 
             "name": "sgame", 
             "tar_url": "sgame/sgame.tar.gz", 
             "title": "游戏加速器", 
-            "version": "0.8.3"
+            "version": "0.8.4"
         }, 
         {
             "build_date": "2018-09-23_18:26:03", 

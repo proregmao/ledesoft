@@ -1,11 +1,11 @@
 #!/bin/sh
 
 MODULE=sgame
-VERSION=0.8.3
+VERSION=0.8.4
 TITLE="游戏加速器"
 DESCRIPTION="外服游戏解决方案"
 HOME_URL=Module_sgame.asp
-CHANGELOG="和其它类似插件更好兼容"
+CHANGELOG="修复定时任务"
 
 # Check and include base
 DIR="$( cd "$( dirname "$BASH_SOURCE[0]" )" && pwd )"
