@@ -1,9 +1,9 @@
 {
-"version":"2.3.3",
-"md5":"58d9a132aae6edf5b2ae1684d0986b35",
+"version":"2.3.4",
+"md5":"d0a1a4bb929106c5e70ce5af38b429cb",
 "home_url":"Module_v2ray.asp",
 "title":"V2Ray",
 "description":"模块化的代理软件包",
-"changelog":"增加进阶模式开关",
-"build_date":"2019-01-11_14:54:07"
+"changelog":"增加流量探测开关",
+"build_date":"2019-01-21_20:43:02"
 }

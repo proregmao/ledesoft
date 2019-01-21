@@ -762,7 +762,7 @@
 			get_run_status();
 			E("_v2ray_basic_status_foreign").innerHTML = "国外链接 - 提交中...暂停获取状态！";
 			E("_v2ray_basic_status_china").innerHTML = "国内链接 - 提交中...暂停获取状态！";
-			var paras_chk = ["enable", "sbmode", "dns_chromecast", "gfwlist_update", "chnroute_update", "cdn_update", "cron" ];
+			var paras_chk = ["enable", "sbmode", "sniffing", "dns_chromecast", "gfwlist_update", "chnroute_update", "cdn_update", "cron" ];
 			var paras_inp = ["v2ray_acl_default_mode", "v2ray_dns_plan", "v2ray_dns_china", "v2ray_dns_china_user", "v2ray_dns_foreign_select", "v2ray_dns_foreign", "v2ray_dns_foreign_user", "v2ray_basic_rule_update", "v2ray_basic_rule_update_day", "v2ray_basic_rule_update_hr", "v2ray_basic_watchdog", "v2ray_basic_watchdog_time", "v2ray_basic_watchdog_mod", "v2ray_basic_cron_enablehour", "v2ray_basic_cron_enableminute", "v2ray_basic_cron_disablehour", "v2ray_basic_cron_disableminute", "v2ray_basic_check_releases", "v2ray_basic_server", "v2ray_basic_type" ];
 			// collect data from checkbox
 			for (var i = 0; i < paras_chk.length; i++) {
@@ -1125,7 +1125,10 @@
 					{ title: '代理模式', name:'v2ray_acl_default_mode',type:'select', options:option_acl_mode, value:dbus.v2ray_acl_default_mode },
 					{ title: 'V2ray服务器类型', name:'v2ray_basic_type',type:'select',options:[['1', '自建'], ['2', '订阅']], value: dbus.v2ray_basic_type || "1"},
 					{ title: 'V2ray服务器选择', name:'v2ray_basic_server',type:'select',options:option_server_list},
-					{ title: '开启进阶模式', name:'v2ray_basic_sbmode',type:'checkbox',value: dbus.v2ray_basic_sbmode == 1,suffix: '&nbsp;&nbsp;启用配置文件routing项，谨慎启用！'},
+					{ title: 'V2ray进阶设置<font color="#B2B2B2">&nbsp;&nbsp;* 本项不了解都不要开启</font>', multi: [
+						{ name:'v2ray_basic_sbmode',type:'checkbox',value: dbus.v2ray_basic_sbmode == 1,suffix: '&nbsp;&nbsp;启用配置文件routing项'},
+						{ name:'v2ray_basic_sniffing',type:'checkbox',value: dbus.v2ray_basic_sniffing == 1,suffix: '&nbsp;&nbsp;启用sniffing流量探测'},
+					]},	
 					{ title: '新增V2ray配置标签', name:'v2ray_basic_tag',type:'text'},
 					//{ title: '<b>v2ray配置文件</b></br></br><font color="#B2B2B2"># 此处填入v2ray json<br /># 请保证json内outbound的配置正确！</font>', name:'v2ray_basic_config',type:'textarea', value: do_js_beautify(Base64.decode(dbus.v2ray_basic_config))||"", style: 'width: 100%; height:450px;' },
 					{ title: '<b>v2ray配置文件</b></br></br><font color="#B2B2B2"># 此处填入v2ray json<br /># 请保证json内outbound的配置正确！</font>', name:'v2ray_basic_config',type:'textarea', style: 'width: 100%; height:450px;' },
@@ -1260,7 +1263,7 @@
 			<script type="text/javascript">
 				$('#v2ray_addon_pannel').forms([
 					{ title: 'V2Ray 自动守护', multi: [
-						{ name: 'v2ray_basic_watchdog',type: 'select', options:[['0', '禁用'], ['1', '开启']], value: dbus.v2ray_basic_watchdog || "0", suffix: ' &nbsp;&nbsp;检测间隔：' },
+						{ name: 'v2ray_basic_watchdog',type: 'select', options:[['0', '禁用'], ['1', '开启']], value: dbus.v2ray_basic_watchdog || "1", suffix: ' &nbsp;&nbsp;检测间隔：' },
 						{ name: 'v2ray_basic_watchdog_time', type: 'select', options:option_time_watch, value: dbus.v2ray_basic_watchdog_time || "1",suffix: ' &nbsp;&nbsp;掉线重连方案：' },
 						{ name: 'v2ray_basic_watchdog_mod', type: 'select', options:option_time_mod, value: dbus.v2ray_basic_watchdog_mod || "1",suffix: ' &nbsp;&nbsp;' },
 					]},

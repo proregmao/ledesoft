@@ -465,15 +465,15 @@
             "version": "1.0"
         }, 
         {
-            "build_date": "2019-01-11_14:54:07", 
-            "changelog": "增加进阶模式开关", 
+            "build_date": "2019-01-21_20:43:02", 
+            "changelog": "增加流量探测开关", 
             "description": "模块化的代理软件包", 
             "home_url": "Module_v2ray.asp", 
-            "md5": "58d9a132aae6edf5b2ae1684d0986b35", 
+            "md5": "d0a1a4bb929106c5e70ce5af38b429cb", 
             "name": "v2ray", 
             "tar_url": "v2ray/v2ray.tar.gz", 
             "title": "V2Ray", 
-            "version": "2.3.3"
+            "version": "2.3.4"
         }, 
         {
             "build_date": "2018-07-01_17:38:34", 

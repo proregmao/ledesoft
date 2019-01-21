@@ -1,5 +1,10 @@
 Koolshare OpenWRT/LEDE V2ray plugin Changelog
 ===========================================
+2.3.4
+   - add	增加流量探测开关；
+   - add	增加不支持的固件提示；
+   - update	更新v2ray二进制到最新：V4.13.0；
+
 2.3.3
    - add	增加进阶模式开关；
    - fix	修复自动更新订阅开关失效的问题；
