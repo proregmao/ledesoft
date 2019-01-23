@@ -437,7 +437,7 @@ function get_overlay_status(){
 				var ot = response.result.split(">")[0] + " MB";
 				var ou = response.result.split(">")[1] + " MB";
 				var op = Math.round(parseInt(ou) / parseInt(ot) * 1000) / 10.00;
-				var info = "剩余空间：" + ou + " / " + ot + " (" + op + "%)";
+				var info = "已用空间：" + ou + " / " + ot + " (" + op + "%)";
 				$("#overlay_status").show();
 				$("#overlay_status_text").attr("title", info);
 				$("#overlay_status_text div").attr("style", "width: " + op + "%;");
