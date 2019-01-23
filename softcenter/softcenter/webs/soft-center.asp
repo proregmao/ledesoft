@@ -843,10 +843,10 @@ function layer_show(){
 		$('#github_png').on('click', function() {
 			layer.open({
 				type: 2,
-				area: ['750px', '550px'],
+				area: ['780px', '450px'],
 				fixed: false, //不固定
 				maxmin: true,
-				content: 'http://ip111.cn/'
+				content: 'http://ip.koolcenter.com/all'
 			});
 		});
 }
